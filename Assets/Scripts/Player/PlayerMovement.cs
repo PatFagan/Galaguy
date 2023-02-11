@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     // movement variables
     public float moveSpeed = 50f, rotLerp = 100f;
     public Rigidbody2D physicsComponent;
+    public bool immobile;
 
     // jump variables
     float dashCooldown = 0f;
@@ -42,24 +43,27 @@ public class PlayerMovement : MonoBehaviour
     // contains movement code
     void Movement()
     {
-        // x axis
-        if (Input.GetAxis("Horizontal") > 0)
+        if (!immobile)
         {
-            physicsComponent.AddForce(Vector3.right * moveSpeed * Time.deltaTime, ForceMode2D.Force);
-        }
-        else if (Input.GetAxis("Horizontal") < 0)
-        {
-            physicsComponent.AddForce(Vector3.left * moveSpeed * Time.deltaTime, ForceMode2D.Force);
-        }
+            // x axis
+            if (Input.GetAxis("Horizontal") > 0)
+            {
+                physicsComponent.AddForce(Vector3.right * moveSpeed * Time.deltaTime, ForceMode2D.Force);
+            }
+            else if (Input.GetAxis("Horizontal") < 0)
+            {
+                physicsComponent.AddForce(Vector3.left * moveSpeed * Time.deltaTime, ForceMode2D.Force);
+            }
 
-        // z axis
-        if (Input.GetAxis("Vertical") > 0)
-        {
-            physicsComponent.AddForce(Vector3.up * moveSpeed * Time.deltaTime, ForceMode2D.Force);
-        }
-        else if (Input.GetAxis("Vertical") < 0)
-        {
-            physicsComponent.AddForce(Vector3.down * moveSpeed * Time.deltaTime, ForceMode2D.Force);
+            // z axis
+            if (Input.GetAxis("Vertical") > 0)
+            {
+                physicsComponent.AddForce(Vector3.up * moveSpeed * Time.deltaTime, ForceMode2D.Force);
+            }
+            else if (Input.GetAxis("Vertical") < 0)
+            {
+                physicsComponent.AddForce(Vector3.down * moveSpeed * Time.deltaTime, ForceMode2D.Force);
+            }
         }
 
         // rotate player in movement direction
