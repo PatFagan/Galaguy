@@ -8,6 +8,13 @@ public class Shooting : MonoBehaviour
     float cooldownTimer = 0f;
     public float cooldownDuration;
 
+    private AudioSource shootSound;
+
+    private void Start()
+    {
+        shootSound = GameObject.Find("ShootSound").GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -16,6 +23,8 @@ public class Shooting : MonoBehaviour
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             cooldownTimer = cooldownDuration;
+
+            shootSound.Play();
         }
 
         cooldownTimer -= Time.deltaTime;
