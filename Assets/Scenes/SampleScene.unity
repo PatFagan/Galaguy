@@ -285,7 +285,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &1009519656
 AudioSource:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ Transform:
   m_GameObject: {fileID: 1788086013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.47, y: 0.05, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 10345874}
@@ -628,7 +628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5013e0de1fd176047b5a86ad662e9868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 7
   movement: {x: 0, y: 0, z: 0}
 --- !u!70 &1788086018
 CapsuleCollider2D:
@@ -794,8 +794,8 @@ MonoBehaviour:
   rotLerp: 100
   physicsComponent: {fileID: 1812486962}
   immobile: 0
-  dashForce: 200
-  dashTimeout: 40
+  dashForce: 100
+  dashTimeout: 1000
 --- !u!4 &1812486964
 Transform:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ Transform:
   m_GameObject: {fileID: 1812486959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
