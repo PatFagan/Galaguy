@@ -18,8 +18,7 @@ public class ShipGunUnlock : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shipShootingScript.projectile != newProjectile)
-            transform.Rotate(0, .1f, 0, Space.Self);
+        transform.Rotate(0, .1f, 0, Space.Self);
     }
 
     void OnTriggerEnter2D(Collider2D collider)
