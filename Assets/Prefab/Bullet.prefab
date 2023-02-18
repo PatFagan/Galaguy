@@ -9,12 +9,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1785111384975592793}
-  - component: {fileID: 1892790350521611447}
+  - component: {fileID: 3685481096785960675}
   - component: {fileID: 202658626605804661}
   - component: {fileID: 5627794332364144319}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: PlayerProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892790350521611447
+--- !u!114 &3685481096785960675
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -43,11 +43,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 9157960203232804347}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bf3338846ba0e24d9ffe43cfe5a8976, type: 3}
+  m_Script: {fileID: 11500000, guid: 7479cd95c709c9344a33c7ccaaa9e76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lifetime: 4
-  speed: 0.01
+  speed: 0.05
+  direction: {x: 0, y: 1}
 --- !u!212 &202658626605804661
 SpriteRenderer:
   m_ObjectHideFlags: 0

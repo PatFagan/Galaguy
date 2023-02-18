@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Shooting : MonoBehaviour
+public class ShipShooting : MonoBehaviour
 {
     public GameObject projectile;
-    float cooldownTimer = 0f;
     public float cooldownDuration;
+    public AudioSource shootSound;
 
-    private AudioSource shootSound;
+    float cooldownTimer = 0f;
 
     Ship shipScript;
     private void Start()
@@ -21,7 +21,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         // spawn projectiles on button press
-        if (Input.GetButtonDown("Shoot") && cooldownTimer < 0f && !shipScript.onShip)
+        if (Input.GetButtonDown("Shoot") && cooldownTimer < 0f && shipScript.onShip)
         {
             Instantiate(projectile, transform.position, Quaternion.identity);
             cooldownTimer = cooldownDuration;

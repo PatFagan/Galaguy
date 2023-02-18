@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    bool ridingSnowmobile = false;
-    bool atSnowmobile = false;
+    public bool onShip = false;
+    bool nearShip = false;
+
+    public GameObject ui;
 
     // movement variables
     float horizontal, vertical, BASE_MOVE_SPEED;
@@ -22,26 +24,32 @@ public class Ship : MonoBehaviour
 
     void Update()
     {
-        print(atSnowmobile);
         // getting on snowmobile
-        if (atSnowmobile)
+        if (nearShip)
         {
-            if (Input.GetButtonDown("Interact") && ridingSnowmobile == false) // get on
+            ui.SetActive(true);
+            if (Input.GetButtonDown("Interact") && onShip == false) // get on
             {
                 player.transform.parent = gameObject.transform; // set snowmobile to parent of player
                 playerMovementScript.immobile = true;
-                ridingSnowmobile = true;
+                onShip = true;
             }
-            else if (Input.GetButtonDown("Interact") && ridingSnowmobile == true) // get off
+            else if (Input.GetButtonDown("Interact") && onShip == true) // get off
             {
                 player.transform.parent = null; // set snowmobile to parent of player
                 playerMovementScript.immobile = false;
-                ridingSnowmobile = false;
+                onShip = false;
             }
         }
-
-        if (ridingSnowmobile)
+        else
         {
+            
+            ui.SetActive(false);
+        }
+
+        if (onShip)
+        {
+            ui.SetActive(false);
             player.transform.position = gameObject.transform.position;
 
             // movement
@@ -56,14 +64,14 @@ public class Ship : MonoBehaviour
     {
         if (collider.gameObject.tag == "Player")
         {
-            atSnowmobile = true;
+            nearShip = true;
         }
     }
     void OnTriggerExit2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player")
         {
-            atSnowmobile = false;
+            nearShip = false;
         }
     }
 }
