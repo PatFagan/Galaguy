@@ -29,4 +29,10 @@ public class MainMenu : MonoBehaviour
     {
         credits.SetActive(false);
     }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+        Debug.Log("Quit Game");
+    }
 }
