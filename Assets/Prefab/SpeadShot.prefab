@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetime: 2
   speed: 0.04
-  direction: {x: 0.5, y: 0.5}
+  direction: {x: -0.5, y: 0.5}
 --- !u!212 &3723477594184480475
 SpriteRenderer:
   m_ObjectHideFlags: 0
