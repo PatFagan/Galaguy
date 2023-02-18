@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     //reference credits obj
-    public GameObject credits;
+    private GameObject credits;
+    private GameObject homePage;
 
     private void Start()
     {
         credits = GameObject.Find("Credits");
         credits.SetActive(false);
+
+        homePage = GameObject.Find("MenuHomePage");
+        homePage.SetActive(true);
     }
 
 
@@ -23,11 +27,13 @@ public class MainMenu : MonoBehaviour
     public void OpenCredits()
     {
         credits.SetActive(true);
+        homePage.SetActive(false);
     }
 
     public void CloseCredits()
     {
         credits.SetActive(false);
+        homePage.SetActive(true);
     }
 
     public void QuitGame()
