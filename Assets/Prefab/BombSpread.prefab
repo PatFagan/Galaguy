@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6563119768559733513}
   - component: {fileID: 6497278157082712532}
+  - component: {fileID: 8747339657128601907}
   - component: {fileID: 3723477594184480475}
   - component: {fileID: 8041880938852186949}
   m_Layer: 0
@@ -49,6 +50,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: -0.5, y: 0.5}
+--- !u!114 &8747339657128601907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975054485507019866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &3723477594184480475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5964665318257261636}
   - component: {fileID: 3012355946139761543}
+  - component: {fileID: 5110344674355472344}
   - component: {fileID: 4426948168539718866}
   - component: {fileID: 6465468301116740505}
   m_Layer: 0
@@ -166,6 +181,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: 0, y: -0.5}
+--- !u!114 &5110344674355472344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256609454528245843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &4426948168539718866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -244,6 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7152105392981010540}
   - component: {fileID: 6364420387598397323}
+  - component: {fileID: 1965807216057997782}
   - component: {fileID: 4334989713930583884}
   - component: {fileID: 2081821521112812420}
   m_Layer: 0
@@ -283,6 +312,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: 0, y: 0.5}
+--- !u!114 &1965807216057997782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588269146114761436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &4334989713930583884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -361,6 +403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101184668958375038}
   - component: {fileID: 4749637437908114770}
+  - component: {fileID: 3848945860769897393}
   - component: {fileID: 316036242198968567}
   - component: {fileID: 2396097920883391850}
   m_Layer: 0
@@ -400,6 +443,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: 0.5, y: -0.5}
+--- !u!114 &3848945860769897393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3956071812369753788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &316036242198968567
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -478,6 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8279828638184790620}
   - component: {fileID: 3853157539084874506}
+  - component: {fileID: 188177402025456693}
   - component: {fileID: 2345336579679858630}
   - component: {fileID: 1358903501103003450}
   m_Layer: 0
@@ -517,6 +574,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: -0.5, y: -0.5}
+--- !u!114 &188177402025456693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4572509370456341138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &2345336579679858630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -595,6 +665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5051421955176815109}
   - component: {fileID: 8354469657371804824}
+  - component: {fileID: 7353168946277334663}
   - component: {fileID: 2517316055316105143}
   - component: {fileID: 847985515286444657}
   m_Layer: 0
@@ -634,6 +705,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: 0.5, y: 0.5}
+--- !u!114 &7353168946277334663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692985269436523103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &2517316055316105143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -712,6 +796,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3906757213998019611}
   - component: {fileID: 2965823073618552817}
+  - component: {fileID: 1461683764178315388}
   - component: {fileID: 4303778014878140173}
   - component: {fileID: 3779687822438285340}
   m_Layer: 0
@@ -751,6 +836,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: -0.5, y: 0}
+--- !u!114 &1461683764178315388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556949089377735249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &4303778014878140173
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -829,6 +927,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3526759753245059693}
   - component: {fileID: 58875650625059123}
+  - component: {fileID: 110917093232058059}
   - component: {fileID: 2101702974306921970}
   - component: {fileID: 5724708069395280852}
   m_Layer: 0
@@ -868,6 +967,19 @@ MonoBehaviour:
   lifetime: 1
   speed: 0.08
   direction: {x: 0.5, y: 0}
+--- !u!114 &110917093232058059
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7576936280636823457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
 --- !u!212 &2101702974306921970
 SpriteRenderer:
   m_ObjectHideFlags: 0

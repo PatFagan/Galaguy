@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6563119768559733513}
   - component: {fileID: 6497278157082712532}
+  - component: {fileID: 1983733229586733139}
   - component: {fileID: 3723477594184480475}
   - component: {fileID: 8041880938852186949}
   m_Layer: 0
@@ -49,6 +50,19 @@ MonoBehaviour:
   lifetime: 2
   speed: 0.04
   direction: {x: -0.5, y: 0.5}
+--- !u!114 &1983733229586733139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975054485507019866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.75
 --- !u!212 &3723477594184480475
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -127,6 +141,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7152105392981010540}
   - component: {fileID: 6364420387598397323}
+  - component: {fileID: 288862608432641913}
   - component: {fileID: 4334989713930583884}
   - component: {fileID: 2081821521112812420}
   m_Layer: 0
@@ -166,6 +181,19 @@ MonoBehaviour:
   lifetime: 2
   speed: 0.04
   direction: {x: 0, y: 0.5}
+--- !u!114 &288862608432641913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2588269146114761436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.75
 --- !u!212 &4334989713930583884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -244,6 +272,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5051421955176815109}
   - component: {fileID: 8354469657371804824}
+  - component: {fileID: 3395914200289148909}
   - component: {fileID: 2517316055316105143}
   - component: {fileID: 847985515286444657}
   m_Layer: 0
@@ -283,6 +312,19 @@ MonoBehaviour:
   lifetime: 2
   speed: 0.04
   direction: {x: 0.5, y: 0.5}
+--- !u!114 &3395914200289148909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5692985269436523103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.75
 --- !u!212 &2517316055316105143
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -361,6 +403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3906757213998019611}
   - component: {fileID: 2965823073618552817}
+  - component: {fileID: 3258238857923683275}
   - component: {fileID: 4303778014878140173}
   - component: {fileID: 3779687822438285340}
   m_Layer: 0
@@ -400,6 +443,19 @@ MonoBehaviour:
   lifetime: 2
   speed: 0.04
   direction: {x: -0.5, y: 0}
+--- !u!114 &3258238857923683275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556949089377735249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.75
 --- !u!212 &4303778014878140173
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -478,6 +534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3526759753245059693}
   - component: {fileID: 58875650625059123}
+  - component: {fileID: 8375740332711699587}
   - component: {fileID: 2101702974306921970}
   - component: {fileID: 5724708069395280852}
   m_Layer: 0
@@ -517,6 +574,19 @@ MonoBehaviour:
   lifetime: 2
   speed: 0.04
   direction: {x: 0.5, y: 0}
+--- !u!114 &8375740332711699587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7576936280636823457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9415c8f1a1bf9854a909be8a4fa894ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 0.75
 --- !u!212 &2101702974306921970
 SpriteRenderer:
   m_ObjectHideFlags: 0

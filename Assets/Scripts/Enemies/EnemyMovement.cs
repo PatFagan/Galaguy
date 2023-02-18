@@ -19,8 +19,8 @@ public class EnemyMovement : MonoBehaviour
     {
         GameObject target = GameObject.FindGameObjectWithTag(targetTag);
         //navMeshAgent.SetDestination(target.transform.position);
-        print(transform.position);
-        print("player: " + target.transform.position);
+        //print(transform.position);
+        //print("player: " + target.transform.position);
         transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
     }
 
